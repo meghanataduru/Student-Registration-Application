@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+<style>
+	a {
+    color: white;
+
+}
+.container{
+	height:100%;
+}
+div#head{
+	background-color:black; 
+	height:30px;
+	
+}
+div#im {
+    float: left;
+}
+div#im1 {
+	padding-left: 30%;
+}
+div#csu {
+    margin-top: 2%;
+}
+a.hf {
+    color: black;
+	font-size: 22px;
+}
+div#bu{
+	margin-top:4%;
+}
+div#img {
+    margin-left: 37%;
+}
+div#b {
+    margin-left: 42%;
+}
+div#fot{
+	background-color:green;
+	text-align: center;
+	margin-top: 2%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row" id="head">
+		<a class="hel">CSU Home</a>
+		<a class="hel">Index</a>
+		<a class="hel">Campus Map</a>
+	</div>
+	<div class="row" id="csu">
+		<div class="col-md-4" id="im">
+			<img src="1.png">
+		</div>
+		<div class="col-md-offset-2" id="im1">
+				<img src="2.png" id="ri">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4" id="hre">
+			<a class="hf" id="cam" onmouseover="det()">What is CampusNet?</a><br>
+			<a class="hf">How to login?</a><br>
+			<a class="hf">Who can obtain access?</a><br>
+			<a class="hf">	Hours of Availability?</a><br>
+			<a class="hf">	Contact Us</a><br>
+			<a class="hf">	Order Textbooks <i class="glyphicon glyphicon-shopping-cart"></i></a>
+			<br>
+		</div>
+		<div class="col-md-offset-2" id="img">
+		<img src="img1.jpg">
+		</div>
+	</div>
+	<div class="row" id="bu">
+		<div class="col-md-offset-5" id="b">
+				<button type="button" class="btn btn-outline-secondary" id="but" onClick= "location.href='login.html'">CampusNet Login</button>
+				<button type="button" class="btn btn-outline-secondary" id="but" onclick="message()">CampusNet Guest</button>
+				<button type="button" class="btn btn-outline-secondary" id="but" onclick="message()">CampusNet Help</button>
+		</div>
+	</div>
+	<div class="row" id="fot">
+		<h7>Cleveland State University, 2121 Euclid Avenue</h7>
+	</div>
+
+
+
+</div>
+
+<script>
+	function message(){
+		document.getElementById("but").click();
+		alert("The server right now is still in process");
+	}
+	function det(){
+		document.getElementById("cam").click();
+		alert("Welcome to Cleveland State University's CampusNet. From this site, as a student you can add and drop classes, view and print your schedule, manage your account, request transcripts, forward your campus email, view grades, and more. As an instructor you can view your class rosters, process grade rosters, view your schedule, and view student information.");
+	}
+	function load_home() {
+        document.getElementById("but").innerHTML='<object type="text/html" data="login.html" ></object>';
+   }
+	</script>
+
+
+</body>
+</html>

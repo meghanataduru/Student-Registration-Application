@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+li.nav-item {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    color: black;
+}
+a.nav-link.active {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 16px;
+}
+ul.nav.nav-tabs.md-tabs {
+    border-bottom: unset;
+}
+div#tab {
+    margin-top: 3%;
+}
+div#aler {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #88c652;
+    border-radius: 4px;
+    border-top-width: 31px;
+}
+p.hed {
+    position: absolute;
+    top: 6%;
+}
+div#part {
+    width: 24%;
+}
+div#csualert {
+    width: 44%;
+}
+p.pge {
+    position: absolute;
+    bottom: 83%;
+}
+div#part{
+    border: 1px solid #88c652;
+    border-top-width: 30px;
+}
+a {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-md-12">
+            <img src="header.jpg">
+        </div>
+        <div class="col-md-12" id="tab"> 
+        <ul class="nav nav-tabs md-tabs">
+                <li class="nav-item" id="nv">
+                  <a class="nav-link" href="#" onclick="openCity(event, 'Paris')" id="defaultOpen">Personal Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="openCity(event, 'Account')">Account</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aplicant</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Financial Aid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Graduation</a>
+                </li>
+              </ul>
+</div>
+
+
+<div id="Paris" class="tabcontent">
+    <div class="col-md-8" id="csualert">
+            <div class="alert" id="aler">
+                <p class="hed">CSU ALert</p>
+                <p>The CSU Alert contact information we have on file for you is displayed below. This contact information will be used in the event of a University wide emergency notification (for example, campus closings, building emergencies, etc.)</p>
+            </div>
+    </div>
+    <div class="col-md-4" id="part">
+        <div class="imp" id="impmsg">
+            <p class="pge">Important Messages</p>
+                <a>Student Health Insurance</a><br>
+                <a>Reset Your Password Online If You Forget It! </a>
+                <a></a>
+        
+        </div>
+    </div>
+</div>
+
+<div id="Account" class="tabcontent">
+        <h3>Fees Details</h3>
+    </div>
+
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+                 for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+            }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+    </script>
+
+</body>
+</html>
