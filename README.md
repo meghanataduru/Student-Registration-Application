@@ -1,4 +1,4 @@
-# Validation
+# Student Registration Application
 
 ## Problem Statement 
 
