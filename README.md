@@ -8,9 +8,9 @@ To access please login : Username : test@csuohio.edu  and Password : test123
 
 ## Screenshots
 
-[Home page](https://github.com/meghanataduru/Validation/blob/master/home%20page.PNG)
+![Home page](https://github.com/meghanataduru/Validation/blob/master/home%20page.PNG)
 
-[Login page](https://github.com/meghanataduru/Validation/blob/master/Login%20page.PNG)
+![Login page](https://github.com/meghanataduru/Validation/blob/master/Login%20page.PNG)
 
 
 ## Tools Used
