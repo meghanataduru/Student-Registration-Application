@@ -14,10 +14,10 @@ To access please login : Username : test@csuohio.edu  and Password : test123
 
 
 ## Tools Used
-HTML5
-CSS 3
-Bootstrap 4
-Javascript
+- HTML5
+- CSS 3
+- Bootstrap 4
+- Javascript
 
 ## References
 
